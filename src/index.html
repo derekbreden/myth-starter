@@ -1,0 +1,39 @@
+<body class=this.class()>
+  <a href="/home-page" >'home'</a>
+  <br>
+  this.list().map((item)=>
+    <hr>
+    <div>item()</div>
+    <b>item(),item()</b>
+  )
+</body>
+
+<script>
+  this.list = m.prop('abcde'.split(''))
+  this.class = m.prop('class2')
+  let do_animate = () =>{
+    this.class(this.class()==='class1'?'class2':'class1')
+    setTimeout(
+      ()=>{
+        requestAnimationFrame(do_animate)
+      }
+    ,2000)  
+  }
+  do_animate()
+</script>
+
+<style>
+  a{
+    transition: all .3s ease-out;
+    -webkit-transition: all .3s ease-out;
+    text-decoration: none;
+    font-size: 36px;
+    color: #369;
+  }
+  .class1{
+    letter-spacing: 0;
+  }
+  .class2{
+    letter-spacing: 50px;
+  }
+</style>

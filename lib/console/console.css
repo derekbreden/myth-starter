@@ -1,0 +1,71 @@
+html{
+  height: 100%; width: 100%; position: relative;
+  overflow: hidden;
+}
+body{
+  position: absolute; margin: 0;
+  bottom: 50%; top: 0; left: 0; right: 0;
+  overflow: auto; height: auto; width: auto;
+}
+console,console-header,console-header-item,console-inner{
+  box-sizing: border-box;
+}
+console{
+  font-family: Trebuchet MS;
+  background:#000;
+  color: #FFF;
+  font-size: 14px;
+  letter-spacing: .5px;
+  line-height: 24px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: auto;
+  height: 50%;
+  transition: height 200ms ease-in;
+  -webkit-transition: height 200ms ease-in;
+}
+console-header{
+  height: 36px;
+  display: block;
+  border-bottom: 2px solid #333;
+  border-top: 6px solid transparent;
+  padding: 0 4px;
+}
+console-header-item{
+  height: 28px;
+  line-height: 28px;
+  padding: 0 15px;
+  display: inline-block;
+  color: #aaa;
+  cursor: pointer;
+}
+console-header-item.active{
+  background: #333;
+  color: #FFF;
+  cursor: default;
+}
+console-inner{
+  font-family: Courier;
+  font-size: 12px;
+  letter-spacing: 0;
+  background: #1a1a1a;
+  border-left: 2px solid #333;
+  border-right: 2px solid #333;
+  padding: 5px 15px;
+  display: block;
+  height: calc(100% - 36px);
+  overflow-y:auto;
+  overflow-x: hidden;
+}
+console-item{
+  display: block;
+  white-space: pre;
+}
+console-item b{
+  font-weight: normal;
+}
+console-item s1{
+  color: #aaa;
+}
