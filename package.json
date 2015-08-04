@@ -2,10 +2,9 @@
   "name": "myth-starter",
   "version": "0.0.1",
   "scripts": {
-    "start": "gulp"
+    "start": "myth"
   },
   "dependencies": {
-    "gulp": "3.9.0",
     "myth": "0.0.1"
   }
 }
