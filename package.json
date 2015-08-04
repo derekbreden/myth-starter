@@ -1,11 +1,11 @@
 {
   "name": "myth-starter",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "scripts": {
     "start": "gulp"
   },
   "dependencies": {
     "gulp": "3.9.0",
-    "myth": "*"
+    "myth": "0.0.1"
   }
 }
