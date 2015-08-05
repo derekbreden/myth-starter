@@ -5,6 +5,6 @@
     "start": "myth"
   },
   "dependencies": {
-    "myth": "0.0.1"
+    "myth": "derekbreden/myth"
   }
 }
