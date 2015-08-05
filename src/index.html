@@ -3,25 +3,18 @@
   <br>
   this.list().map((item)=>
     <hr>
-    <div>item()</div>
     <b>item(),item()</b>
   )
 </body>
-
 <script>
   this.list = m.prop('abcde'.split(''))
   this.class = m.prop('class2')
   let do_animate = ()=>{
     this.class(this.class()==='class1'?'class2':'class1')
-    setTimeout(
-      ()=>{
-        requestAnimationFrame(do_animate)
-      }
-    , 2000) 
+    setTimeout(do_animate, 2000) 
   }
   do_animate()
 </script>
-
 <style>
   a{
     transition: all .3s ease-out;
